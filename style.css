@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Nunito+Sans:opsz,wght@6..12,300;6..12,400;6..12,500&display=swap');
+
+
+
+
+
+
+/* CSS RESETS */
+:root {
+    --clr-neutral-100: 0 0% 100%;
+    --clr-neutral-200: 210 46% 95%;
+    --clr-neutral-300: 0 0% 81%;
+    --accent-color: rgb(3, 103, 242);
+  
+    --ff-primary: "Barlow Semi Condensed", sans-serif;
+  
+    --fw-400: 500;
+    --fw-700: 600;
+  
+    --fs-300: 0.6875rem;
+    --fs-400: 0.8125rem;
+    --fs-500: 1.25rem;
+
+
+    /* This is for the fonts */
+
+    --primary-font: 'Almarena', sans-serif;
+    --secondary-font:'Montserrat', sans-serif;
+
+
+    --accent-color: rgb(3, 103, 242);
+    --accent-orange: rgb(232, 170, 82);
+
+  }
+  
+  /* Box sizing rules */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Remove default margin */
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0;
+  }
+  
+  /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+  ul[role="list"],
+  ol[role="list"] {
+    list-style: none;
+  }
+  
+  /* Set core root defaults */
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  /* Set core body defaults */
+  body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    font-family: var(--secondary-font)
+  }
+  
+  /* A elements that don't have a class get default styles */
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+  }
+  
+  /* Make images easier to work with */
+  img,
+  picture {
+    max-width: 100%;
+    display: block;
+  }
+  
+  /* Inherit fonts for inputs and buttons */
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
+  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  /* END OF CSS RESETS */
+
+
+/* This is the nav section */
+
+
+header{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+.logo{
+    width: 4rem;
+}
+
+.btn-nave{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: none;
+}
+
+.btn-nav{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: none;
+
+}
+
+
+
+.active-btn{
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+
+}
+
+.in{
+    background: none;
+    background-color: none;
+    border: none;
+    padding: 1rem;
+
+}
+
+
+
+
+
+/* This is the end of the  nav section */
+
+
+.tagline{
+    color: var(--accent-orange);
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.left h1{
+    font-family: var(--primary-font);
+    font-size: 4rem;
+    line-height: 4.5rem;
+    width: 70%;
+    font-weight: 900;
+}
+
+.left h1 span{
+    color: var(--accent-color);
+}
+
+.btn-line{
+    font-size: 1.125rem;
+    font-weight: 400;
+    width: 79%;
+}
+
+.ate{
+    text-decoration: none;
+    color: white;
+}
+
+.ite{
+    text-decoration: none;
+    color: var(--clr-neutral-300);
+}
+
+.hero-btn{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.left{
+    display: flex;
+    align-items: first baseline;
+    flex-direction: column;
+    width: 40%;
+    gap: 2rem;
+}
+
+
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem;
+}
+
+
+.place{
+    width: 500px;
+}
+
+
+
+/* THIS IS THE SCHOOL SECTION */
+
+.school{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.school h2{
+    font-size: 2.3rem;
+    font-family: var(--primary-font);
+}
+
+.school p{
+    width: 50%;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* THIS IS THE FLIP CARD SECTION */
+
+
+ /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+ .flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    color: black;
+    border-radius: 10px;
+
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    border-radius: 10px;
+    height: 100%;
+    color: white;
+    transform: rotateY(180deg);
+  } 
+
+  .flip-card-back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  /* END OF CAROUSEL DO NOT TOUCH  */
+
+  .carousel-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.data{
+   
+    background-size: contain;
+    background-image: url(/assets/Downsize.png);
+    border-radius: 10px;
+
+}
+
+.engineering{
+    background-size: contain;
+    background-image: url(/assets/Downsize.png);
+    border-radius: 10px;
+
+}
+
+.product{
+    background-size: contain;
+    background-image: url(/assets/Downsize.png);
+    border-radius: 10px;
+
+}
+
+.business{
+    background-size: contain;
+    background-image: url(/assets/Downsize.png);
+    border-radius: 10px;
+
+}
+.creative-economy{
+    background-size: contain;
+    background-image: url(/assets/Downsize.png);
+    border-radius: 10px;
+
+}
