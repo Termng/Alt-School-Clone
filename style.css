@@ -359,3 +359,108 @@ header{
     border-radius: 10px;
 
 }
+
+/* THIS IS THE BEGINNING OF THE CARD GROUP */
+
+.courses h2{
+    font-family: var(--primary-font);
+    font-size: 2.3rem;
+}
+
+.card{
+    max-width: 420px;
+    height: 550px;
+    /* background-color: blue; */
+    box-shadow: rgba(11, 173, 198, 0.3) 0px 19px 38px, rgba(25, 171, 255, 0.22) 0px 15px 12px;
+    padding: 2rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.inner-card{
+    /* background-color: rgb(224, 0, 0); */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: first baseline;
+    justify-content: center;
+    /* border: 3rem; */
+}
+
+.card-image{
+    /* place-content: center; */
+    border-radius: 10px;
+    background-size:cover;
+    background-repeat: no-repeat;    
+    width: 345px;
+    height: 240px;
+    background-image: url(/assets/Downsize.png);
+}
+
+.c-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.courses{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-block: 2rem;
+}
+
+
+
+/* THIS IS THE END OF THE CARD GROUP */
+
+
+
+/* THIS IS THE START OF THE LEARNERS SECTION */
+
+.learners h2{
+    font-family: var(--primary-font);
+    font-size: 2.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* THIS IS THE END OF THE LEARNERS SECTION */
+
+
+.logo-slide img{
+    width: 80px;
+    
+}
+
+.logo-slide{
+    display: flex;
+    
+    gap: 2rem;
+
+}
