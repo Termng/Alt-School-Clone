@@ -719,8 +719,25 @@ main{
 .testimonials{
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
 }
+
+.learners-say{
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.subline{
+    font-size: 1.3rem;
+    color: grey;
+    text-align: center;
+    font-weight: 400;
+}
+
+
 
 
 .tmonial-card{
@@ -733,11 +750,15 @@ main{
 
 .tmonial-card:nth-child(odd){
     flex-direction: row-reverse;
-    text-align: right;
+    text-align: left;
 }
 
 .deets{
     max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+
 }
 
 
@@ -747,6 +768,22 @@ main{
     border-radius: 50%;
 }
 
+
+.d-course{
+    font-family: var(--primary-font);
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+.d-name{
+    color: #001e48;
+    font-weight:500;
+}
+
+.d-detail{
+    line-height: 1.7rem;
+    color: rgb(116, 116, 116);
+}
 
 
 
@@ -773,6 +810,30 @@ footer{
     flex-direction: column;
     align-items: first baseline;
     gap: 2rem;
+}
+
+.footer-children{
+    display: flex;
+    gap: 1rem;
+    align-items:first baseline;
+    flex-direction: column;
+}
+
+.footer-children ul li a{
+    text-decoration: none;
+    color: grey;
+}
+
+.footer-children ul{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    list-style-position: outside;
+}
+
+.footer-children ul li {
+    list-style: none;
+    list-style-position: inside;
 }
 
 
@@ -816,6 +877,23 @@ iframe{
     width: 500px;
     height: 240px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
