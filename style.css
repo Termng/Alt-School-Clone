@@ -10,7 +10,7 @@
     --clr-neutral-100: 0 0% 100%;
     --clr-neutral-200: 210 46% 95%;
     --clr-neutral-300: 0 0% 81%;
-    --accent-color: rgb(3, 103, 242);
+    --accent-color: #0367f2;
   
     --ff-primary: "Barlow Semi Condensed", sans-serif;
   
@@ -29,7 +29,7 @@
 
 
     --accent-color: rgb(3, 103, 242);
-    --accent-orange: rgb(232, 170, 82);
+    --accent-orange: #e8aa52;
 
   }
   
@@ -125,6 +125,13 @@ header{
 }
 
 
+main{
+    padding-inline: rem;
+    background: rgb(240,240,245);
+    background: linear-gradient(155deg, rgba(240,240,245,1) 0%, rgba(211,248,255,0.5998600123643207) 100%); 
+    overflow: hidden;
+}
+
 .logo{
     width: 4rem;
 }
@@ -144,6 +151,14 @@ header{
 
 }
 
+.bars{
+    color: black;
+    font-size: 2.4rem;
+}
+
+.collapse{
+    display: none;
+}
 
 
 .active-btn{
@@ -169,11 +184,23 @@ header{
 
 /* This is the end of the  nav section */
 
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    padding-bottom: 5rem;
+}
+
 
 .tagline{
     color: var(--accent-orange);
     font-size: .8rem;
     font-weight: 500;
+    background-color: rgb(255, 255, 255);
+    padding: 0.4rem;
+    border-radius: 10px;
+    
 }
 
 .left h1{
@@ -217,16 +244,29 @@ header{
     flex-direction: column;
     width: 40%;
     gap: 2rem;
+    padding-top: 5rem;
 }
 
 
 
-.hero{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8rem;
+
+
+
+
+.carousel{
+    width: 680px;
 }
+
+.resize{
+    object-fit: contain;
+    max-width: 400px;
+}
+
+.big{
+    max-width: 600px;
+   
+}
+
 
 
 .place{
@@ -243,6 +283,7 @@ header{
     align-items: center;
     flex-direction: column;
     gap: 2rem;
+    padding-block: 3rem;
 }
 
 .school h2{
@@ -267,6 +308,11 @@ header{
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
+
+  .flip-card-back{
+    width:200px;
+    height: 200px;
+  }
   
   /* This container is needed to position the front and back side */
   .flip-card-inner {
@@ -276,6 +322,7 @@ header{
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    background: rgb(240,240,245);
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -297,6 +344,14 @@ header{
     color: black;
     border-radius: 10px;
 
+  }
+
+  .flip-card-front h2{
+    text-align: center;
+    margin: auto;
+    padding-top: 80px;
+    color: white;
+    font-size: 1.6rem;
   }
   
   /* Style the back side */
@@ -327,36 +382,48 @@ header{
 
 .data{
    
-    background-size: contain;
-    background-image: url(/assets/Downsize.png);
+    background-size:cover;
+    background-image: url(/assets/flipcards/chart.png);
     border-radius: 10px;
+    background-repeat: no-repeat;
+
 
 }
 
+
+
 .engineering{
-    background-size: contain;
-    background-image: url(/assets/Downsize.png);
+    background-size:cover;
+    background-image: url(/assets/flipcards/code.png);
     border-radius: 10px;
+    background-repeat: no-repeat;
+
 
 }
 
 .product{
-    background-size: contain;
-    background-image: url(/assets/Downsize.png);
+    background-size:cover;
+    background-image: url(/assets/flipcards/product.png);
     border-radius: 10px;
+    background-repeat: no-repeat;
+
 
 }
 
 .business{
-    background-size: contain;
-    background-image: url(/assets/Downsize.png);
+    background-size:cover;
+    background-image: url(/assets/flipcards/businesspeople.png);
     border-radius: 10px;
+    background-repeat: no-repeat;
+
 
 }
 .creative-economy{
-    background-size: contain;
-    background-image: url(/assets/Downsize.png);
+    background-size:cover;
+    background-image: url(/assets/flipcards/creator.png);
     border-radius: 10px;
+    background-repeat: no-repeat;
+
 
 }
 
@@ -394,12 +461,36 @@ header{
 .card-image{
     /* place-content: center; */
     border-radius: 10px;
-    background-size:cover;
-    background-repeat: no-repeat;    
     width: 345px;
     height: 240px;
-    background-image: url(/assets/Downsize.png);
 }
+
+.music-industry{
+    background-image: url(/assets/3d/artist.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;    
+
+}
+
+
+.content-maker{
+    background-image: url(/assets/3d/contentmaker.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;    
+
+
+}
+
+
+.business-client{
+    background-image: url(/assets/3d/businessguy.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;    
+
+
+}
+
+
 
 .c-card{
     display: flex;
@@ -424,9 +515,17 @@ header{
 
 /* THIS IS THE START OF THE LEARNERS SECTION */
 
+.learners{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
 .learners h2{
     font-family: var(--primary-font);
     font-size: 2.3rem;
+    text-align: center;
 }
 
 
@@ -452,15 +551,519 @@ header{
 
 /* THIS IS THE END OF THE LEARNERS SECTION */
 
+.log{
+    overflow: hidden;
+    /* backgrxound-color: red; */
+    margin-inline: 20rem;
+    white-space: nowrap;
 
-.logo-slide img{
-    width: 80px;
+}
+
+.big{
+    font-size: 80px;
+    padding: 2rem;
     
 }
 
+
 .logo-slide{
-    display: flex;
+    display: inline-block;
+    animation: 25s slide infinite linear;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0)
+
+    }
+    to {
+        transform: translateX(-100%);
+
+    }
     
+}
+
+@keyframes counter{
+    from {
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+.logo-slid{
+    display: inline-block;
+    animation: 25s counter infinite linear;
+    animation-direction: reverse;
+    
+
+}
+
+.loge{
+   
+        overflow: hidden;
+        /* backgrxound-color: red; */
+        margin-inline: 20rem;
+        white-space: nowrap;
+    
+}
+
+.log:hover .logo-slide{
+    animation-play-state: paused;
+}
+
+.loge:hover .logo-slid{
+    animation-play-state: paused;
+
+
+}
+
+
+
+
+
+
+
+.txt{
+    display: flex;
+    align-items: first baseline;
+    flex-direction: column;
+}
+
+
+
+
+
+
+.circle{
+    font-size: 50px;
+    color: white ;
+   
+}
+
+
+.detail{
+    display: flex;
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.cat{
+    display: flex;
+    align-items: center;
+    padding-block: .4rem;
+    padding-inline: .6rem;
+    gap: 1rem;
+    width: 93%;
+    border-radius: 5px;
+    transition: all ease-in-out .4s;
+}
+
+
+.lefty{
+   max-width: 45%;
+   display: flex;
+   flex-direction: column;
+   align-items: first baseline;
+   justify-content: center;
+}
+
+.styled-p{
+    font-size: .9rem;
+    padding: .4rem;
+    color:#dea351;
+    background-color: #fae7cd;
+    width: fit-content;
+    border-radius: 50px;
+}
+
+.lefty h2{
+    font-family: var(--primary-font);
+    font-size: 2.6rem;
+    max-width: 500px;
+}
+
+.reason-why{
+    max-width: 700px;
+    padding-bottom: 2rem;
+
+}
+
+.righty{
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    /* max-width: 50%; */
+    padding-block: 2rem;
+    padding-inline: 2.5rem;
+    border-radius: 4px;
+}
+
+.cat:hover{
+    transform: scale(1.17);
+    color: black;
+    background-color: white;
+}
+
+.cat:hover .circle{
+    color: var(--accent-orange);
+}
+
+
+
+.testimonials{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+
+.tmonial-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 2rem;
 
+}
+
+.tmonial-card:nth-child(odd){
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.deets{
+    max-width: 1000px;
+}
+
+
+
+.profile-pic img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+
+
+
+
+/* THIS IS THE FOOTER SECTION */
+
+.footer-flex{
+    display: flex;
+    align-items: first baseline;
+    /* justify-content: center; */
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+.logo-class{
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    gap: 2rem;
+}
+
+
+
+.footer-logo img{
+    width: 90px;
+}
+
+
+.icon-tfooter{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+
+.partner{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.partner .fa-github{
+    font-size: 2rem;
+
+}
+
+.bppe {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+}
+
+.bppe img{
+    width: 80px;
+}
+
+
+iframe{
+    width: 500px;
+    height: 240px;
+}
+
+
+
+@media (max-width: 1580px) {
+    .left h1{
+        width: 90%;
+    }
+    
+}
+
+
+
+@media(max-width: 1000px){
+    .hero{
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .left{
+        width: 100%;
+        align-items: first baseline;
+        justify-content: center;
+    }
+
+    .hero-btn{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .btn-nave{
+        display: none;
+    }
+    .collapse{
+        display: block;
+    }
+
+    header{
+        justify-content: space-around;
+        gap: 20rem
+    }
+
+
+}
+
+
+
+@media (max-width: 1242px) {
+    .carousel-flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .c-card{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    
+}
+
+
+@media (max-width: 1172px){
+    .log{
+        margin-inline: 5rem;
+
+    }
+    .loge{
+        margin-inline: 5rem;
+    }
+    .big{
+        font-size: 40px;
+    }
+
+    .tmonial-card{
+        flex-wrap: wrap;
+    }
+}
+
+
+@media(max-width:1200px){
+    .detail{
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .lefty{
+        max-width: 100%;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .reason-why{
+        width: 100%;
+    }
+
+}
+
+@media(max-width: 1198px){
+    .detail{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+@media(max-width: 1402px){
+    .btn-nav{
+        display: none;
+    }
+}
+
+
+@media (max-width: 566px) {
+    .detail{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+    }
+   
+    iframe{
+        width: 350px;
+        height: 250px;
+    }
+}
+
+
+
+@media (max-width: 586px){
+    .carousel{
+        width: 420px;
+    }
+
+    .card-image{
+        /* place-content: center; */
+        border-radius: 10px;
+        width: 250px;
+        height: 150px;
+    }
+    .inner-card{
+        display: flex;
+        align-items: center;
+    }
+    .righty{
+        margin-top: 2rem;
+    }
+    
+}
+
+
+@media  (max-width: 722px) {
+    body{
+        font-size: 15px;
+    }
+
+    .left h1{
+        font-size: 2.5rem;
+        width: 100%;
+        line-height: 2.7rem;
+    }
+    .btn-line{
+        font-size: 1rem;
+        width: 100%;
+    }
+    .school p{
+        font-size: 1rem;
+        width: 100%;
+    }
+    
+}
+
+
+@media (max-width: 544px){
+    header{
+        gap: 10rem;
+    }
+}
+
+
+@media (max-width: 367px){ 
+    
+    .card-image{
+        /* place-content: center; */
+        border-radius: 10px;
+        width: 200px;
+        height: 150px;
+    }
+    iframe{
+        width: 250px;
+        height: 200px;
+    }
+}
+
+
+
+
+@media (max-width: 504px) {
+    .cat{
+        display: flex;
+        flex-wrap: wrap;
+        font-size: .8rem;
+        width: 100%;
+        padding-inline: 1rem;
+        padding-block: 1rem;
+
+    }
+    .cat:hover{
+        color: black;
+        background-color: white;
+        transform:scale(1.0)
+    }
+
+    .cat:hover .circle{
+        color: var(--accent-orange);
+    }   
+
+
+
+
+
+    .righty{
+        color: white;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+        /* max-width: 50%; */
+        padding-block: 0rem;
+        padding-inline: 0rem;
+        border-radius: 4px;
+        width: 100%;
+    }
+
+    .detail{
+        display: flex;
+        gap: 0rem;
+        padding: 0rem;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:510px) {
+    .flip-card{
+        width: 300px;
+        height: 200px;
+
+    } 
 }

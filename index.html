@@ -12,6 +12,12 @@
     <script src="https://kit.fontawesome.com/fc0bcf5886.js" crossorigin="anonymous"></script>
     <!-- This is for Font Awesome Icons -->
 
+
+    <!-- This is for the shoelace cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/themes/light.css" />
+
+    <!-- This is for the shoelace cdn -->
+
     
 </head>
 <body>
@@ -33,6 +39,10 @@
                 <button class="in">Login</button>
             </div>
 
+            <div class="collapse">
+                <i class="fas fa-bars bars "></i>
+            </div>
+
         </header>
 
         
@@ -51,15 +61,55 @@
                 
                     <div class="hero-btn">
                         <button class="active-btn" ><a class="ate" href="#"> Create Account <span><i class="fa-solid fa-arrow-right"></i></span></a></button>
-                        <button class="in"><a class="ite" href="#"> View our Schhols <span><i class="fa-solid fa-arrow-right"></i></span></a></button>
+                        <button class="in"><a class="ite" href="#"> View our Schools <span><i class="fa-solid fa-arrow-right"></i></span></a></button>
                     </div>
             </div>
                 
                 
             <div class="right">
-                <div class="carousel">
-                    <img class="place" src="/assets/altschool_africa.svg" alt="">
-                    <!-- PLACE SOMETHING HERE -->
+                
+                    <div class="carousel">
+                        <sl-carousel autoplay loop pagination  autoplayInterval : 2000        style="--aspect-ratio: 1/1;  " >
+                            <sl-carousel-item>
+                              <img
+                              class="big"
+                                alt="The sun shines on the mountains and trees (by Adam Kool on Unsplash)"
+                                src="/assets/BUSINESS.png"
+                              />
+                            </sl-carousel-item>
+                            <sl-carousel-item>
+                              <img
+                              class="big"
+                                alt="A waterfall in the middle of a forest (by Thomas Kelly on Unsplash)"
+                                src="/assets/CREATIVEECONOMY.png"
+                              />
+                            </sl-carousel-item>
+                            <sl-carousel-item>
+                              <img
+                              class="big"
+                                alt="The sun is setting over a lavender field (by Leonard Cotte on Unsplash)"
+                                src="/assets/DATA.png"
+                              />
+                            </sl-carousel-item>
+                            <sl-carousel-item>
+                              <img
+                              class="big"
+                                alt="A field of grass with the sun setting in the background (by Sapan Patel on Unsplash)"
+                                src="/assets/ENGINEERING.png"
+                              />
+                            </sl-carousel-item>
+                            <sl-carousel-item>
+                              <img
+                              class="big"
+                                alt=""
+                                src="/assets/PRODUCT.png"
+                              />
+                            </sl-carousel-item>
+                          </sl-carousel>
+                    </div>
+
+
+
                 </div>
             </div>
         </section>
@@ -80,32 +130,12 @@
 
                     <div class="carousel-flex">
                         <div class="flip-card">
-                            <div class="flip-card-inner product">
-                              <div class="flip-card-front">
-                              </div>
-                              <div class="flip-card-back" style="width: 200px; height: 200px;">
-                                <h1>Engineering</h1>
-                                <button><a href="#"> Learn More</a></button>
-                        
-                              </div>
-                            </div>
-                          </div>
-                        <div class="flip-card">
                             <div class="flip-card-inner engineering">
                               <div class="flip-card-front">
+                                <h2>Engineering</h2>
+
                               </div>
-                              <div class="flip-card-back" style="width: 200px; height: 200px;">
-                                <h1>Engineering</h1>
-                                <button><a href="#"> Learn More</a></button>
-                        
-                              </div>
-                            </div>
-                          </div>
-                        <div class="flip-card">
-                            <div class="flip-card-inner creative-economy">
-                              <div class="flip-card-front">
-                              </div>
-                              <div class="flip-card-back" style="width: 200px; height: 200px;">
+                              <div class="flip-card-back">
                                 <h1>Engineering</h1>
                                 <button><a href="#"> Learn More</a></button>
                         
@@ -115,8 +145,35 @@
                         <div class="flip-card">
                             <div class="flip-card-inner data">
                               <div class="flip-card-front">
+                                <h2>Data</h2>
+
                               </div>
-                              <div class="flip-card-back" style="width: 200px; height: 200px;">
+                              <div class="flip-card-back" >
+                                <h1>Engineering</h1>
+                                <button><a href="#"> Learn More</a></button>
+                        
+                              </div>
+                            </div>
+                          </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner product">
+                              <div class="flip-card-front">
+                                <h2>Product</h2>
+
+                              </div>
+                              <div class="flip-card-back">
+                                <h1>Engineering</h1>
+                                <button><a href="#"> Learn More</a></button>
+                        
+                              </div>
+                            </div>
+                          </div>
+                        <div class="flip-card">
+                            <div class="flip-card-inner creative-economy">
+                              <div class="flip-card-front">
+                                <h2>Creative Economy</h2>
+                              </div>
+                              <div class="flip-card-back">
                                 <h1>Engineering</h1>
                                 <button><a href="#"> Learn More</a></button>
                         
@@ -127,6 +184,8 @@
                         <div class="flip-card">
                             <div class="flip-card-inner business">
                               <div class="flip-card-front">
+                                <h2>Business</h2>
+
                               </div>
                               <div class="flip-card-back" style="width: 200px; height: 200px;">
                                 <h1>Engineering</h1>
@@ -163,7 +222,7 @@
             <div class="c-card">
                 <div class="card">
                     <div class="inner-card">
-                        <div class="card-image">
+                        <div class="card-image music-industry">
                         </div>
                         <h3>Navigating the Music Business in Africa: Afrobeats case study (6 Weeks)</h3>
                         <p>Learn the fundamentals of the music business from scratch and how to tap into the Afrobeats wave.</p>
@@ -172,7 +231,7 @@
                 </div>
                 <div class="card">
                     <div class="inner-card">
-                        <div class="card-image">
+                        <div class="card-image content-maker">
                         </div>
                         <h3>Content Mastery in the comedy space for African Creators (6 Weeks)</h3>
                         <p>The program is designed to teach you how to start and boost your content creation career regardless of your niche interest.</p>
@@ -181,7 +240,7 @@
                 </div>
                 <div class="card">
                     <div class="inner-card">
-                        <div class="card-image">
+                        <div class="card-image business-client">
                         </div>
                         <h3>High-Impact Selling: From Prospecting to Closing (6 Weeks)</h3>
                         <p> Invest in your professional growth and equip yourself with the essential skills and strategies to excel in the competitive sales landscape.</p>
@@ -199,25 +258,309 @@
 
 
 
-            <div class="logo">
+            <div class="log">
                 <div class="logo-slide">
-                   <i class="fab fa-airbnb" ></i>
+                   <i class="fa-brands fa-airbnb big"></i>
+                   <i class="fa-brands fa-apple big"></i>
+                   <i class="fa-brands fa-figma big"></i>
+                   <i class="fa-brands fa-pinterest big"></i>
+                   <i class="fa-brands fa-stripe big"></i>
+                   <i class="fa-brands fa-pagelines big"></i>
+                   <i class="fa-brands fa-salesforce big"></i>
+                   <i class="fa-brands fa-xbox big"></i>
+                   <i class="fa-brands fa-fedex big"></i>
+                   <i class="fa-brands fa-ebay big"></i>
+                   <i class="fa-brands fa-amazon-pay big"></i>
+                </div>
+                <div class="logo-slide">
+                   <i class="fa-brands fa-airbnb big"></i>
+                   <i class="fa-brands fa-apple big"></i>
+                   <i class="fa-brands fa-figma big"></i>
+                   <i class="fa-brands fa-pinterest big"></i>
+                   <i class="fa-brands fa-stripe big"></i>
+                   <i class="fa-brands fa-pagelines big"></i>
+                   <i class="fa-brands fa-salesforce big"></i>
+                   <i class="fa-brands fa-xbox big"></i>
+                   <i class="fa-brands fa-fedex big"></i>
+                   <i class="fa-brands fa-ebay big"></i>
+                   <i class="fa-brands fa-amazon-pay big"></i>
+                </div>
+            </div>
+
+            <div class="loge">
+                <div class="logo-slid">
+                   <i class="fab fa-aviato big"></i>
+                   <i class="fa-brands fa-apple big"></i>
+                   <i class="fa-brands fa-figma big"></i>
+                   <i class="fa-brands fa-pinterest big"></i>
+                   <i class="fa-brands fa-stripe big"></i>
+                   <i class="fa-brands fa-pagelines big"></i>
+                   <i class="fa-brands fa-salesforce big"></i>
+                   <i class="fa-brands fa-xbox big"></i>
+                   <i class="fa-brands fa-fedex big"></i>
+                   <i class="fa-brands fa-ebay big"></i>
+                   <i class="fa-brands fa-amazon-pay big"></i>
+                </div>
+                <div class="logo-slid">
+                   <i class="fa-brands fa-airbnb big"></i>
+                   <i class="fab fa-cc-visa big"></i>
+                   <i class="fa-brands fa-figma big"></i>
+                   <i class="fa-brands fa-pinterest big"></i>
+                   <i class="fab fa-cc-apple-pay big"></i>
+                   <i class="fa-brands fa-pagelines big"></i>
+                   <i class="fa-brands fa-salesforce big"></i>
+                   <i class="fa-brands fa-xbox big"></i>
+                   <i class="fab fa-cc-stripe big"></i>
+                   <i class="fa-brands fa-ebay big"></i>
+                   <i class="fa-brands fa-amazon-pay big"></i>
                 </div>
             </div>
         </section>
 
 
 
+        <section class="detail">
+            
+            <div class="lefty">
+
+                <p class="styled-p">WHY ALTSCHOOL</p>
+                <h2>Reimagining the African Dream</h2>
+
+                <p class="reason-why">This is where dreams come to life. With our carefully crafted learning courses and diploma programs we will meet you where you are, and take you to where you want to be in your career.</p>
+                <iframe 
+                
+                src="https://www.youtube.com/embed/vkZTngSUpXU?si=r_UTW3YKYRq_Nq2l&amp;start=60" 
+                title="Why Alt School ? " 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share">
+
+                </iframe>
+            </div>
+
+            
+            <div class="righty">
+
+                <div class="cat">
+                    <span class="squircle"> 
+                        <i class="fa-solid fa-location-dot circle"></i>
+                    </span>
+                    <div class="txt">
+                        <p>Learn anywhere</p>
+                        <p>Why go to a lecture hall when you can learn from home, by the beach, at the recording studio or at your shop?</p>
+                    </div>
+                </div>
+                <div class="cat">
+                    <span class="squircle"> 
+                        <i class="fa-solid fa-gift circle "></i>
+                    </span>
+                    <div class="txt">
+                        <p>Learning is fun</p>
+                        <p>Say goodbye to outdated curriculums, bulky lecture notes, and boring lectures.</p>
+                    </div>
+                </div>
+                <div class="cat">
+                    <span class="squircle"> 
+                        <i class="fa-solid fa-arrows-down-to-people circle"></i>                    
+                    </span>
+                    <div class="txt">
+                        <p>Learning is communal</p>
+                        <p>Learners are working together, sharing knowledge, and collaborating to enhance their understanding. You are not alone with your learning journey.</p>
+                    </div>
+                </div>
+                <div class="cat">
+                    <span class="squircle"> 
+                        <i class="fa-solid fa-circle-check circle"></i>                    
+                    </span>
+                    <div class="txt">
+                        <p>Learn from the best</p>
+                        <p>Our instructors are carefully selected to give you the best learning outcome. They are the best on the subject matter and poised to give you the learning you deserve.</p>
+                    </div>
+                </div>
+                <div class="cat">
+                    <span class="squircle">
+                        <i class="fa-solid fa-bullseye circle"></i>      
+                    </span>              
+                        <div class="txt">
+                        <p>Learn the profitable way</p>
+                        <p>Whether you're exploring a career path, embracing a new challenge, or acquiring new skills for your career, we will help you to achieve the desired results.</p>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
 
 
 
+        <section class="testimonials">
+            <div class="testimonial-header">
+                <h2>Learners say we know our onions</h2>
+                <h3>No jokes - See proof here!</h3>
+            </div>
 
+            <div class="tmonial-card">
+                <div class="profile-pic">
+                    <img src="/assets/Downsize.png" alt="">
+                </div>
+                <div class="deets">
+                    <p>Cloud Engineering</p>
+                    <p>FUNMILAYO FAGOYINBO</p>
+                    <p>I finally made it. I came out wiser, more refined
+                        in the tech space, found my strength, and became
+                        a better version of myself all in a space of over
+                        one year. Mama I made it. Congrats to me and everyone
+                    </p>
+                </div>
+            </div>
 
+            <div class="tmonial-card">
+                <div class="profile-pic">
+                    <img src="/assets/Downsize.png" alt="">
+                </div>
+                <div class="deets">
+                    <p>Cloud Engineering</p>
+                    <p>FUNMILAYO FAGOYINBO</p>
+                    <p>I finally made it. I came out wiser, more refined
+                        in the tech space, found my strength, and became
+                        a better version of myself all in a space of over
+                        one year. Mama I made it. Congrats to me and everyone
+                    </p>
+                </div>
+            </div>
 
-
-
+            <div class="tmonial-card">
+                <div class="profile-pic">
+                    <img src="/assets/Downsize.png" alt="">
+                </div>
+                <div class="deets">
+                    <p>Cloud Engineering</p>
+                    <p>FUNMILAYO FAGOYINBO</p>
+                    <p>I finally made it. I came out wiser, more refined
+                        in the tech space, found my strength, and became
+                        a better version of myself all in a space of over
+                        one year. Mama I made it. Congrats to me and everyone
+                    </p>
+                </div>
+            </div>
+        </section>
 
     </main>
+
+
+
+
+    <footer>
+
+
+        <div class="footer-flex">
+            <div class="logo-class">
+                <div class="footer-logo">
+                    <img src="/assets/AltSchoolWhite.svg" alt="">
+                </div>
+                <div class="icon-tfooter">
+                    <div class="s-icons">
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <a href="#"> <p>Tel: 0800ALTSCHOOL</p></a>
+                </div>
+                <p> © 2023 AltSchool. All rights reserved</p>
+                <div class="partner">
+                    <p>In Partnership with</p>
+                    <i class="fa-brands fa-github"></i>
+                </div>
+                <div class="bppe">
+                    <p>Verification of Exemption from BPPE in line with the State of California</p>
+                    <img src="/logos/BPPE.png" alt="">
+                </div>
+            </div>
+            <div class="footer-children">
+                <p>Schools</p>
+                <ul>
+                    <li><a href="#">School of Engineering</a></li>
+                    <li><a href="#">School of Product</a></li>
+                    <li><a href="#">School of Data</a></li>
+                    <li><a href="#">School of Creative Economy</a></li>
+                    <li><a href="#">School of Business</a></li>
+                </ul>
+            </div>
+            <div class="footer-children">
+                <p>Companies</p>
+                <ul>
+                    <li><a href="#">Hire our Grads</a></li>
+                    <li><a href="#">Collaborate with us</a></li>
+            
+                </ul>
+            </div>
+            <div class="footer-children">
+                <p>About us</p>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-children">
+                <p>Resources</p>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Our Blog</a></li>
+                    <li><a href="#">Scholarships</a></li>
+                </ul>
+            </div>
+            <div class="footer-children">
+                <p>Featured Courses</p>
+                <ul>
+                    <li><a href="#">Javascript for Beginners</a></li>
+                    <li><a href="#">SQL for Beginners</a></li>
+                    <li><a href="#">UI/UX Foundations</a></li>
+                    <li><a href="#">Fintech Product Management</a></li>
+                    <li><a href="#">Data Modelling for Beginners</a></li>
+                    <li><a href="#">Navigating the Music Business in Africa: Afrobeats case study</a></li>
+                    <li><a href="#">Content Mastery for African Creators</a></li>
+                    <li><a href="#">High-Impact Selling: From Prospecting to Closing</a></li>
+                </ul>
+            </div>
+            <div class="footer-children">
+                <p>Diploma Programs</p>
+                <ul>
+                    <li><a href="#">Backend Engineering</a></li>
+                    <li><a href="#">Cloud Engineering</a></li>
+                    <li><a href="#">Frontend Engineering</a></li>
+                    <li><a href="#">Product Design</a></li>
+                    <li><a href="#">Product Marketing</a></li>
+                    <li><a href="#">Product Management</a></li>
+                    <li><a href="#">Data Science</a></li>
+                    <li><a href="#">Data Engineering</a></li>
+                    <li><a href="#">Data Analysis</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p>AltSchool Africa is a registered trademark of TalentQL Technologies. © 2021–2023 TalentQL, Inc.</p>
+        <p>AltSchool Africa skill development programs are approved by the California Bureau for Postsecondary Education under exemption.</p>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- This is for the shoelace js -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.11.2/cdn/shoelace-autoloader.js"></script>
+    <!-- This is for the shoelace js -->
+
     <script src="app.js"></script>
 </body>
 </html>
