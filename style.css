@@ -115,20 +115,26 @@
 /* This is the nav section */
 
 
-header{
+.header{
     display: flex;
     justify-content: center;
     gap: 10rem;
     align-items: center;
     font-size: 1rem;
     font-weight: 500;
+    padding-top: 2rem;
+    /* opacity: 0; */
+    /* position: fixed;
+    transform: translateX(30px);
+    background-color: #f6f3f3;
+    z-index: 999; */
 }
 
 
 main{
     padding-inline: rem;
-    background: rgb(240,240,245);
-    background: linear-gradient(155deg, rgba(240,240,245,1) 0%, rgba(211,248,255,0.5998600123643207) 100%); 
+    background: rgb(255, 255, 255);
+    background: linear-gradient(155deg, rgba(240,240,245,1) 0%, rgba(255, 255, 255, 0.6) 100%); 
     overflow: hidden;
 }
 
@@ -153,7 +159,7 @@ main{
 
 .bars{
     color: black;
-    font-size: 2.4rem;
+    font-size: 1.6rem;
 }
 
 .collapse{
@@ -178,6 +184,13 @@ main{
 
 }
 
+.stylized{
+    background-color: rgb(232, 233, 226);
+    color: var(--accent-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+
 
 
 
@@ -189,7 +202,8 @@ main{
     align-items: center;
     justify-content: center;
     gap: .4rem;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
+    padding-inline: 2rem;
 }
 
 
@@ -263,7 +277,7 @@ main{
 }
 
 .big{
-    max-width: 600px;
+    /* max-width: 600px; */
    
 }
 
@@ -283,7 +297,9 @@ main{
     align-items: center;
     flex-direction: column;
     gap: 2rem;
-    padding-block: 3rem;
+    padding-block: .5rem;
+    padding-inline: 2rem;
+
 }
 
 .school h2{
@@ -356,7 +372,7 @@ main{
   
   /* Style the back side */
   .flip-card-back {
-    background-color: dodgerblue;
+    background-color: var(--accent-color);
     border-radius: 10px;
     height: 100%;
     color: white;
@@ -560,7 +576,7 @@ main{
 }
 
 .big{
-    font-size: 80px;
+    font-size: 65px;
     padding: 2rem;
     
 }
@@ -704,6 +720,11 @@ main{
     border-radius: 4px;
 }
 
+.bullet{
+    font-size: 1rem;
+    font-weight: 3oo;
+}
+
 .cat:hover{
     transform: scale(1.17);
     color: black;
@@ -722,6 +743,7 @@ main{
     gap: 4rem;
     align-items: center;
     justify-content: center;
+    padding-block: 4rem;
 }
 
 .learners-say{
@@ -793,10 +815,11 @@ main{
 .footer-flex{
     display: flex;
     align-items: first baseline;
-    /* justify-content: center; */
-    gap: 4rem;
+    justify-content: space-evenly;
+    gap: 6rem;
     flex-wrap: wrap;
-    margin: 0 auto;
+    padding-inline: 5rem;
+    padding-block: 3rem;
 }
 
 
@@ -815,25 +838,31 @@ footer{
 .footer-children{
     display: flex;
     gap: 1rem;
-    align-items:first baseline;
+    align-items:center;
+    justify-content: flex-start;
     flex-direction: column;
+    /* width: 200px; */
 }
 
-.footer-children ul li a{
+.footer-children div button a{
     text-decoration: none;
     color: grey;
 }
 
-.footer-children ul{
+.footer-children div{
     display: flex;
+    align-items:first baseline;
     flex-direction: column;
     gap: .6rem;
-    list-style-position: outside;
+    flex-wrap: wrap;
 }
 
-.footer-children ul li {
-    list-style: none;
-    list-style-position: inside;
+
+
+.footer-children div button {
+   background-color: none;
+   border: none;
+   background: none;
 }
 
 
@@ -878,12 +907,31 @@ iframe{
     height: 240px;
 }
 
+hr{
+    margin-inline: 5.2rem;
+}
+
+
+.copyright{
+    display: flex;
+    align-items: first baseline;
+    gap: 2rem;
+    flex-direction: column;
+    font-size: .8rem;
+    margin-top: 3rem;
+    margin-inline: 5.2rem;
+    font-weight: 400;
+    padding-bottom: 4rem;
+}
 
 
 
-
-
-
+@media (max-width:1086px) {
+    .footer-flex{
+        justify-content:flex-start;
+    }
+    
+}
 
 
 
@@ -929,7 +977,7 @@ iframe{
         display: block;
     }
 
-    header{
+    .header{
         justify-content: space-around;
         gap: 20rem
     }
@@ -963,7 +1011,7 @@ iframe{
         margin-inline: 5rem;
     }
     .big{
-        font-size: 40px;
+        font-size: 30px;
     }
 
     .tmonial-card{
@@ -1067,7 +1115,7 @@ iframe{
 
 
 @media (max-width: 544px){
-    header{
+    .header{
         gap: 10rem;
     }
 }
@@ -1135,6 +1183,10 @@ iframe{
         padding: 0rem;
         width: 100%;
     }
+
+    .lefty{
+        padding: 2rem;
+    }
     
 }
 
@@ -1145,3 +1197,11 @@ iframe{
 
     } 
 }
+
+/* @media (max-width: 342px) {
+    .footer-children div{
+        align-items: flex-end;
+        justify-content: center;
+    }
+    
+} */
