@@ -175,6 +175,15 @@ main{
 
 }
 
+.ine{
+    background: none;
+    background-color: none;
+    border: none;
+    padding: 1rem;
+
+}
+
+
 .in{
     background: none;
     background-color: none;
@@ -190,6 +199,14 @@ main{
     padding: 10px;
     width: 100%;
     transition: all ease-in-out .4s;
+    cursor: pointer;
+}
+
+.stylize{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
     cursor: pointer;
 }
 
