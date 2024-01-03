@@ -184,12 +184,19 @@ main{
 }
 
 .stylized{
-    background-color: rgb(232, 233, 226);
-    color: var(--accent-color);
+    background-color: black;
+    color: white;
     border-radius: 10px;
     padding: 10px;
+    width: 100%;
+    transition: all ease-in-out .4s;
+    cursor: pointer;
 }
 
+.stylized:hover{
+    background-color: var(--accent-orange);
+    color: black;
+}
 
 
 
@@ -471,12 +478,15 @@ main{
     align-items: first baseline;
     justify-content: center;
     /* border: 3rem; */
+    max-width: 270px;
+    flex: 1;
+    height: 100%;
 }
 
 .card-image{
     /* place-content: center; */
     border-radius: 10px;
-    width: 345px;
+    width: 100%;
     height: 240px;
 }
 
@@ -817,31 +827,34 @@ main{
 .counter-flex{
     display: flex;
     align-items: center;
+    flex: 1;
     flex-direction: column;
-    gap: 2rem;
-    background-color: rgb(247, 247, 247);
-    padding: 3rem;
-    border-radius: 5px;
-    max-width: 500px;
+    gap: 1.2rem;
+    background-color: rgb(0, 0, 0);
+    padding: 1.4rem;
+    border-radius: 25px;
+    max-width: 300px;
     box-shadow: rgba(41, 41, 202, 0.25) 0px 0.0625em 0.0625em, rgba(18, 95, 167, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 .numplus{
     display: flex;
     align-items: center;
-    /* flex-direction: column; */
-    color: #5e5e5e;
+    color: var(--accent-orange);
     font-weight: 300;
 
 }
 
 .numplus p{
     font-size: 1.8rem;
+    color: var(--accent-orange);
+
 }
 
 .ficon{
     font-size: 3rem;
-    color: var(--accent-color);
+    color: var(--accent-orange);
+
 }
 
 .count-me{
@@ -855,14 +868,15 @@ main{
 
 .count-main{
     font-size: 4rem;
-    font-weight: 300;
-    color: #848484;
+    font-weight: 600;
+    color: #ffffff;
 }
 
 .counter-flex h3{
     font-family: var(--primary-font);
     font-size: 1.7rem;
-    color: var(--accent-color);
+    font-weight: 200;
+    color: var(--accent-orange);
 
 }
 
